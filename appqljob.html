@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>STT</td>
+                <td>Công việc</td>
+            </tr>
+        </thead>
+        <tbody id="tbJobs">
+            
+        </tbody>
+    </table>
+</body>
+<script>
+    let jobs = [
+        "quét nhà",
+        "lau nhà",
+        "giặt áo quần",
+        "nấu ăn"
+    ]
+    let tbJobs = document.querySelector('#tbJobs');
+    for (let w = 0; w < jobs.length; w++) {
+        tbJobs.innerHTML += `
+                             <tr>
+                                <td>${w+1}</td>
+                                <td>${jobs[w]}</td>
+                            </tr> `
+                            
+    }
+</script>
+
+</html>

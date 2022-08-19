@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+
+    let matrix = [];
+    let row = 4;
+    let cell = 5;
+    let min = 10, max = 50;
+    for (let r = 0; r < row; r++) {
+        matrix[r] = [];
+        for (let c = 0; c < cell; c++) {
+            matrix[r][c] = Math.floor(Math.random() * (max - min + 1) + min);
+        }
+    }
+    for (r = 0; r < row; r++) {
+        document.write(`${matrix[r]} <br/>`);
+    }
+
+
+</script>
+
+</html>
